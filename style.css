@@ -1,0 +1,228 @@
+.container{
+    background-image: url("img/design.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input_area{
+    width: 820px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.input_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding: 20px;
+}
+
+.v_align{
+    position: absolute;
+    border: 1px solid #029ce6;
+    height: 250px;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+.v_align span{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #029ce6;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+    background-color: #029ce6;
+    color: #fff;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+.input_items h1{
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: -20px;
+    color: #029ce6;
+}
+
+.input_items form{
+    width: 100%;
+   
+}
+.input_box{
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.input_box input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    padding-left: 25px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #a3a3a3;
+    font-size: 17px;
+    color: #363636;
+}
+.input_box span i{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    color: rgb(54, 53, 53); 
+}
+.input_box input[type="submit"]{
+    background: #029CE6;
+    font-size: 22px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.input_box input[type="submit"]:hover{
+    background-color: #fa424e;
+}
+.input_box input[type="text"]:focus,
+.input_box input[type="text"]:valid,
+.input_box input[type="password"]:focus{
+    border-bottom-color: #029ce6;
+    color: #029ce6;
+}
+.txt{
+   margin-top: 15px;
+    text-align: center;
+}
+.txt a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fa424e;
+    transition: 0.5s;
+}
+.txt a:hover{
+    color: #029CE6;
+    border-bottom: 1px solid #029ce6;
+}
+
+
+.social_area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    overflow: hidden;
+    position: relative;
+}
+.scl_txt h2{
+    font-size: 28px;
+    font-weight: normal;
+    color: #363636;
+    margin: 5px;
+    
+}
+.scl_txt button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #029CE6;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.scl_txt button:hover{
+    background-color: #fa424e;
+}
+.scl_link{
+    text-align: center;
+    margin-top: 10px;
+}
+.scl_link p{
+    font-size: 20px;
+    color: #363636;
+}
+.scl_link ul{
+    padding: 0;
+    list-style: none;
+}
+
+.scl_link ul li{
+    display: inline-block;
+
+}
+.scl_link ul li a{
+    text-decoration: none;
+    
+}
+.scl_link ul li i{
+    display: block;
+    width: 35px;
+    height: 25px;
+    font-size: 17px;
+    border: 0;
+    outline: 0;
+    border-radius: 100%;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #fa424e;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+
+}
+.scl_link ul li i.fa-facebook:hover{
+    background: #3A5693;
+    color: #ffffff;
+}
+.scl_link ul li i.fa-twitter:hover{
+    background: #00A7E6;
+    color: #ffffff;
+}
+.scl_link ul li i.fa-linkedin:hover{
+    background: #0270AD;
+    color: #ffffff;
+}
+.scl_link ul li i.fa-dribbble:hover{
+    background-color: #E9508E;
+    color: #fff;
+}
+.scl_link ul li i.fa-pinterest:hover{
+    background-color: #C31D24;
+    color: #fff;
+}
+
+/*==============================
+===Responsive Code Start Here===
+================================*/
+
+@media (max-width:650px) {
+    .input_area { grid-template-columns: repeat(1, 1fr);}
+    .input_items { padding: 20px 40px;}
+    .input_items h1 { text-align: center;}
+    .v_align{
+        position: absolute;
+        top: 100%; 
+        left: 50%; 
+        width: 60%;
+        height: 0;
+        margin-top: 10px;
+        
+    }
+    .v_align span { left: 50%;}
+
+}
